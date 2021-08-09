@@ -1,0 +1,4 @@
+name: test
+entry_points:
+  main:
+    command: dvc repro

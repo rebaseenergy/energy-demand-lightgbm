@@ -1,0 +1,27 @@
+stages:
+  prepare:
+    cmd: python src/prepare.py data/STH-small.csv data/prepared
+    deps:
+    - src/prepare.py
+    params:
+    - prepare.weather
+    outs:
+    - data/prepared
+  featurize:
+    cmd: python src/featurize.py data/prepared data/features
+    deps:
+    - data/prepared
+    - src/featurize.py
+    params:
+    - featurize.features
+    outs:
+    - data/features
+  train:
+    cmd: python src/train.py data/features model.pkl
+    deps:
+    - src/train.py
+    - data/features
+    params:
+    - train
+    outs:
+    - model.pkl
