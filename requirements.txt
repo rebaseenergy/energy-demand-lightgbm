@@ -1,0 +1,2 @@
+git+https://github.com/rebaseenergy/rebase-sdk.git@3a2c5d071d7d9eb37e7727ed7c804e06fd9a54d2
+lightgbm==3.2.1

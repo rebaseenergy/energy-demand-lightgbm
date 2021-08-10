@@ -46,8 +46,8 @@ stages:
       md5: abd8b0d818fe835f2b81616b55d4f152
       size: 4714202
     - path: src/train.py
-      md5: c55f6ef47292fde7c0046894bb5868ee
-      size: 1265
+      md5: 4f1f33783dea211974348cd67389bb7a
+      size: 1169
     params:
       params.yaml:
         train:
@@ -58,7 +58,7 @@ stages:
           feature_fraction: 1.0
           lambda_l1: 0.0
           lambda_l2: 0.0
-          learning_rate: 0.4
+          learning_rate: 0.32
           max_bin: 255
           max_depth: 8
           max_leaves: 64
@@ -69,5 +69,5 @@ stages:
           verbose: -1
     outs:
     - path: model.pkl
-      md5: 2cc7e62942f1f7a9e7482a720f4f4927
-      size: 505129
+      md5: fb3beceb30889688dbc10b1fe2eacb84
+      size: 553850
